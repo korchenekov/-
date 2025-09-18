@@ -1,1 +1,27 @@
-#include <iostream>#include <vector>#include <stack>#include <string>int main() {    // Вектор строк    std::vector<std::string> items = {"item1", "item2", "item3"};    // Стек целых чисел    std::stack<int> dataStack;    // Добавление элементов в стек    dataStack.push(10);    dataStack.push(20);    dataStack.push(30);    // Получение верхнего элемента    int topElement = dataStack.top();    dataStack.pop(); // Удаление верхнего элемента    // Вывод результатов    std::cout << "Top element: " << topElement << std::endl;    std::cout << "Stack size after pop: " << dataStack.size() << std::endl;    return 0;}
+#include <iostream>
+#include <vector>
+#include <stack>
+#include <string>
+
+int main() {
+    // Р’РµРєС‚РѕСЂ СЃС‚СЂРѕРє
+    std::vector<std::string> items = {"item1", "item2", "item3"};
+
+    // РЎС‚РµРє С†РµР»С‹С… С‡РёСЃРµР»
+    std::stack<int> dataStack;
+
+    // Р”РѕР±Р°РІР»РµРЅРёРµ СЌР»РµРјРµРЅС‚РѕРІ РІ СЃС‚РµРє
+    dataStack.push(10);
+    dataStack.push(20);
+    dataStack.push(30);
+
+    // РџРѕР»СѓС‡РµРЅРёРµ РІРµСЂС…РЅРµРіРѕ СЌР»РµРјРµРЅС‚Р°
+    int topElement = dataStack.top();
+    dataStack.pop(); // РЈРґР°Р»РµРЅРёРµ РІРµСЂС…РЅРµРіРѕ СЌР»РµРјРµРЅС‚Р°
+
+    // Р’С‹РІРѕРґ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ
+    std::cout << "Top element: " << topElement << std::endl;
+    std::cout << "Stack size after pop: " << dataStack.size() << std::endl;
+
+    return 0;
+}
