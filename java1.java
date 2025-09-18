@@ -1,1 +1,22 @@
-import java.util.Arrays;import java.util.Stack;public class DataStructuresExample {    public static void main(String[] args) {        // Массив        int[] data = {10, 20, 30, 40, 50};        System.out.println("Массив: " + Arrays.toString(data));                // Стек        Stack<String> stack = new Stack<>();        stack.push("первый");        stack.push("второй");        stack.push("третий");        System.out.println("Стек: " + stack);                // Извлечение из стека        String topElement = stack.pop();        System.out.println("Извлечено: " + topElement);        System.out.println("Осталось в стеке: " + stack);    }}
+import java.util.Arrays;
+import java.util.Stack;
+
+public class UpdatedDataStructures {
+    public static void main(String[] args) {
+        // РњР°СЃСЃРёРІ
+        int[] values = {5, 15, 25, 35, 45};
+        System.out.println("РњР°СЃСЃРёРІ С‡РёСЃРµР»: " + Arrays.toString(values));
+        
+        // РЎС‚РµРє
+        Stack<Character> stack = new Stack<>();
+        stack.push('A');
+        stack.push('B');
+        stack.push('C');
+        System.out.println("РЎС‚РµРє СЃРёРјРІРѕР»РѕРІ: " + stack);
+        
+        // РР·РІР»РµС‡РµРЅРёРµ РёР· СЃС‚РµРєР°
+        char topElement = stack.pop();
+        System.out.println("РР·РІР»РµС‡С‘РЅРЅС‹Р№ СЌР»РµРјРµРЅС‚: " + topElement);
+        System.out.println("РћСЃС‚Р°РІС€РёРµСЃСЏ СЌР»РµРјРµРЅС‚С‹ РІ СЃС‚РµРєРµ: " + stack);
+    }
+}
